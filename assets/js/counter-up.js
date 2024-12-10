@@ -1,4 +1,4 @@
-/*---------- Counter-Up ----------*/
+/*---------- Counter-Up ----------
 
 $(document).ready(function(){
 
@@ -19,4 +19,4 @@ $(document).ready(function(){
       });
     });
     
-    });
+    });*/

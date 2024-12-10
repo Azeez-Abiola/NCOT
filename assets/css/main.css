@@ -7077,3 +7077,81 @@ input[type="range"]::-moz-range-thumb{
     box-shadow: var(--box-shadow);
 }
 /*------------------------------ (09)-Contact (End) ------------------------------*/
+
+
+
+
+/* General Styling for Membership Section */
+.membership-details {
+    padding: 50px 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.membership-details .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Space between items */
+    justify-content: center; /* Center items */
+}
+
+.membership-details .membership-item {
+    flex: 1 1 calc(33.333% - 30px); /* Three items per row on large screens */
+    background-color: #fff; /* Card background */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for elevation */
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.membership-details .membership-item:hover {
+    transform: translateY(-10px); /* Subtle lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.membership-details .membership-item .image {
+    width: 100%;
+    height: 200px; /* Fixed height for uniformity */
+    overflow: hidden;
+}
+
+.membership-details .membership-item .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure image covers the area */
+}
+
+.membership-details .membership-item .content {
+    padding: 20px;
+    text-align: center; /* Center-align text */
+}
+
+.membership-details .membership-item .content h3.main-heading {
+    font-size: 1.5rem;
+    color: #333; /* Darker text for readability */
+    margin-bottom: 15px;
+}
+
+.membership-details .membership-item .content h3.main-heading:hover {
+    color: #007bff; /* Highlight color on hover */
+    text-decoration: underline;
+}
+
+.membership-details .membership-item .content p {
+    font-size: 1rem;
+    color: #666; /* Subtle text color */
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .membership-details .membership-item {
+        flex: 1 1 calc(50% - 30px); /* Two items per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .membership-details .membership-item {
+        flex: 1 1 100%; /* One item per row on small screens */
+    }
+}
