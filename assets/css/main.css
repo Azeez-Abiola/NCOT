@@ -16,7 +16,7 @@
 9- Swiper Pagination CSS
 10- Sidebar Heading CSS
 11- Sidebar CSS
-12- Loader CSS
+12- / CSS
 */
 
 
@@ -1509,8 +1509,8 @@ input:-webkit-autofill:active {
     background-position: 100% 0px;
 }
 
-/*----- 12- Loader CSS -----*/
-.loader-container {
+/*----- 12- / CSS -----*/
+./ {
     position: fixed;
     top: 0;
     left: 0;
@@ -1531,12 +1531,12 @@ input:-webkit-autofill:active {
     transition: none;
 }
 
-.loader-container.fade-out {
+./.fade-out {
     top: -110%;
     opacity: 0;
 }
 
-.loader {
+./ {
     width: 80px;
         aspect-ratio: 1.154;
         -webkit-clip-path: polygon(50% 0, 100% 100%, 0 100%);
