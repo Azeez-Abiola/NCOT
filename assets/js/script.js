@@ -53,3 +53,51 @@ $(document).ready(function(){
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  const faqItems = document.querySelectorAll('.faq-item');
+  
+  faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+          item.classList.toggle('active');
+      });
+  });
+});
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const topicSelect = document.getElementById('topic');
+    const locationSelect = document.getElementById('location');
+    const dateInput = document.getElementById('date');
+    const searchBtn = document.getElementById('searchBtn');
+
+    // Function to handle dropdown changes
+    function handleDropdownChange(event) {
+        const selectedValue = event.target.value;
+        console.log(`Selected ${event.target.name}: ${selectedValue}`);
+        // Here you can add logic to filter events based on the selection
+    }
+
+    // Add event listeners to dropdowns
+    topicSelect.addEventListener('change', handleDropdownChange);
+    locationSelect.addEventListener('change', handleDropdownChange);
+
+    // Function to handle search button click
+    function handleSearch() {
+        const selectedTopic = topicSelect.value;
+        const selectedLocation = locationSelect.value;
+        const selectedDate = dateInput.value;
+
+        console.log('Search criteria:');
+        console.log(`Topic: ${selectedTopic}`);
+        console.log(`Location: ${selectedLocation}`);
+        console.log(`Date: ${selectedDate}`);
+
+        // Here you can add logic to perform the search and update the UI with results
+    }
+
+    // Add event listener to search button
+    searchBtn.addEventListener('click', handleSearch);
+});
+</script>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Title -->
-    <title>BCS | IT & Digital Apprenticeship Awards 2024</title>
+    <title>NCOT | IT & Digital Apprenticeship Awards 2024</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.ico">
@@ -36,7 +36,7 @@
     <!-- ==================== Page-Title (Start) ==================== -->
     <div class="page-title">
         <div class="title">
-            <h2>BCS IT & Digital Apprenticeship Awards 2024</h2>
+            <h2>NCOT IT & Digital Apprenticeship Awards 2024</h2>
         </div>
         <div class="link">
             <a href="../../index.html">home</a>
@@ -52,7 +52,7 @@
         <div class="event-info page-info">
             <!-- Event Image -->
             <div class="image">
-                <img src="../../assets/images/Events/Event-1.jpg" alt="BCS IT & Digital Apprenticeship Awards">
+                <img src="../../assets/images/Events/Event-1.jpg" alt="NCOT IT & Digital Apprenticeship Awards">
                 <!-- Event Date -->
                 <div class="date">2024</div>
                 <!-- Event Countdown Timer -->
@@ -64,7 +64,7 @@
             <!-- Event Content Section -->
             <div class="content">
                 <!-- Event Title -->
-                <h3 class="main-heading">BCS IT & Digital Apprenticeship Awards 2024</h3>
+                <h3 class="main-heading">NCOT IT & Digital Apprenticeship Awards 2024</h3>
 
                 <!-- Event Description -->
                 <p>In its 10th year, these awards celebrate rising stars in IT & Digital, acknowledging the talents and achievements of apprentices, T Level students and Boot Camp learners in all digital disciplines.</p>
@@ -88,7 +88,7 @@
                         <div class="info-item">
                             <div class="info-content">
                                 <div class="info-heading">Headline Sponsor</div>
-                                <h4>RITTech <span>BCS, the Chartered Institute for IT's professional public register</span></h4>
+                                <h4>RITTech <span>NCOT, the Chartered Institute for IT's professional public register</span></h4>
                             </div>
                         </div>
                     </div>
@@ -150,3 +150,40 @@
 
 </body>
 </html>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const topicSelect = document.getElementById('topic');
+    const locationSelect = document.getElementById('location');
+    const dateInput = document.getElementById('date');
+    const searchBtn = document.getElementById('searchBtn');
+
+    // Function to handle dropdown changes
+    function handleDropdownChange(event) {
+        const selectedValue = event.target.value;
+        console.log(`Selected ${event.target.name}: ${selectedValue}`);
+        // Here you can add logic to filter events based on the selection
+    }
+
+    // Add event listeners to dropdowns
+    topicSelect.addEventListener('change', handleDropdownChange);
+    locationSelect.addEventListener('change', handleDropdownChange);
+
+    // Function to handle search button click
+    function handleSearch() {
+        const selectedTopic = topicSelect.value;
+        const selectedLocation = locationSelect.value;
+        const selectedDate = dateInput.value;
+
+        console.log('Search criteria:');
+        console.log(`Topic: ${selectedTopic}`);
+        console.log(`Location: ${selectedLocation}`);
+        console.log(`Date: ${selectedDate}`);
+
+        // Here you can add logic to perform the search and update the UI with results
+    }
+
+    // Add event listener to search button
+    searchBtn.addEventListener('click', handleSearch);
+});
+</script>

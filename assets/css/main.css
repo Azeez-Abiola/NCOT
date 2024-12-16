@@ -55,10 +55,10 @@
 
 
 
-/*------------------------------ (04)-Donation ------------------------------*/
+/*------------------------------ (04)-Membership ------------------------------*/
 /*
-1- Donation
-2- Donation Details
+1- Membership
+2- Membership Details
 */
 
 
@@ -2966,10 +2966,10 @@ input:-webkit-autofill:active {
 
 
 
-/*------------------------------ (04)-Donation (Start) ------------------------------*/
+/*------------------------------ (04)-Membership (Start) ------------------------------*/
 
-/*----- 1- Donation -----*/
-.donations .box-container {
+/*----- 1- Membership -----*/
+.Memberships .box-container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(33rem, 1fr))[auto-fit];
@@ -2978,22 +2978,22 @@ input:-webkit-autofill:active {
     margin: 2rem 0;
 }
 
-.donation-item {
+.Membership-item {
     -webkit-box-shadow: var(--box-shadow);
     box-shadow: var(--box-shadow);
     background-color: var(--white);
     overflow: hidden;
 }
 
-.donation-item .image {
+.Membership-item .image {
     height: 25rem;
 }
 
-.donation-item .content {
+.Membership-item .content {
     padding: 2rem;
 }
 
-.donation-item .content .main-heading {
+.Membership-item .content .main-heading {
     display: block;
     font-size: 2.5rem;
     font-weight: 600;
@@ -3001,15 +3001,15 @@ input:-webkit-autofill:active {
     line-height: 1.4;
 }
 
-.donation-item .content .main-heading:hover {
+.Membership-item .content .main-heading:hover {
     color: var(--main-color);
 }
 
-.donation-item .content p {
+.Membership-item .content p {
     padding: 1rem 0;
 }
 
-.donation-item .content .date {
+.Membership-item .content .date {
     text-align: center;
     display: inline-block;
     font-size: 1.4rem;
@@ -3023,37 +3023,37 @@ input:-webkit-autofill:active {
     gap: 1rem;
 }
 
-.donation-item .content .date i {
+.Membership-item .content .date i {
     color: var(--secondary-color);
 }
 
-.donation-item .skill-bar {
+.Membership-item .skill-bar {
     background-color: rgba(0, 0, 0, 0.1);
     height: 1rem;
     width: 100%;
     margin-top: 2rem;
 }
 
-.donation-item .skill-progress {
+.Membership-item .skill-progress {
     position: relative;
     display: block;
     background-color: var(--secondary-color);
     height: 1rem;
 }
 
-.donation-item:nth-child(1) .skill-progress {
+.Membership-item:nth-child(1) .skill-progress {
     width: 45%;
 }
 
-.donation-item:nth-child(2) .skill-progress {
+.Membership-item:nth-child(2) .skill-progress {
     width: 52%;
 }
 
-.donation-item:nth-child(3) .skill-progress {
+.Membership-item:nth-child(3) .skill-progress {
     width: 13%;
 }
 
-.donation-item .skill-no {
+.Membership-item .skill-no {
     position: absolute;
     right: -1rem;
     top: 50%;
@@ -3079,7 +3079,7 @@ input:-webkit-autofill:active {
     z-index: 1;
 }
 
-.donation-item .amount {
+.Membership-item .amount {
     padding-top: 1.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3090,48 +3090,48 @@ input:-webkit-autofill:active {
     gap: 1.5rem;
 }
 
-.donation-item .amount p {
+.Membership-item .amount p {
     color: var(--black);
     font-weight: 600;
 }
 
-.donation-item .amount p span {
+.Membership-item .amount p span {
     color: var(--secondary-color);
 }
 
-/*----- 2- Donation Details  -----*/
-.donation-info .intro {
+/*----- 2- Membership Details  -----*/
+.Membership-info .intro {
     padding: 2rem 0;
     padding-bottom: 0%;
 }
 
-.donation-info .intro .amount {
+.Membership-info .intro .amount {
     font-size: 1.6rem;
     color: var(--grey);
     margin-bottom: 1rem;
 }
 
-.donation-info .intro .amount span {
+.Membership-info .intro .amount span {
     font-size: 3rem;
     font-weight: 600;
     color: var(--main-color);
 }
 
-.donation-info .skill-bar {
+.Membership-info .skill-bar {
     background-color: rgba(0, 0, 0, 0.1);
     height: 1rem;
     width: 100%;
     margin-bottom: 2rem;
 }
 
-.donation-info .skill-progress {
+.Membership-info .skill-progress {
     position: relative;
     display: block;
     background-color: var(--secondary-color);
     height: 1rem;
 }
 
-.donation-info .skill-no {
+.Membership-info .skill-no {
     position: absolute;
     right: -1rem;
     top: 50%;
@@ -3156,7 +3156,7 @@ input:-webkit-autofill:active {
     z-index: 1;
 }
 
-.donation-info .intro .date {
+.Membership-info .intro .date {
     font-size: 1.6rem;
     color: var(--grey);
     display: -webkit-box;
@@ -3169,19 +3169,19 @@ input:-webkit-autofill:active {
     margin-bottom: 1rem;
 }
 
-.donation-info .intro .date i {
+.Membership-info .intro .date i {
     color: var(--secondary-color);
 }
 
-.donation-info .intro p {
+.Membership-info .intro p {
     padding-top: 1rem;
 }
 
-.donation-info form {
+.Membership-info form {
     margin-top: 1rem;
 }
 
-.donation-info form h4 {
+.Membership-info form h4 {
     font-size: 2.5rem;
     color: var(--black);
     padding-top: 2rem;
@@ -3191,7 +3191,7 @@ input:-webkit-autofill:active {
     text-align: left;
 }
 
-.donation-info h4::before {
+.Membership-info h4::before {
     content: "";
     position: absolute;
     bottom: 0%;
@@ -3202,7 +3202,7 @@ input:-webkit-autofill:active {
 }
 
 /*-- Payment Options --*/
-.donation-info .payment-options {
+.Membership-info .payment-options {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3212,7 +3212,7 @@ input:-webkit-autofill:active {
     gap: 4rem;
 }
 
-.donation-info .payment-item {
+.Membership-info .payment-item {
     cursor: pointer;
     font-size: 1.8rem;
     display: -webkit-box;
@@ -3223,12 +3223,12 @@ input:-webkit-autofill:active {
     align-items: center;
 }
 
-.donation-info .payment-item input {
+.Membership-info .payment-item input {
     position: absolute;
     opacity: 0;
 }
 
-.donation-info .payment-item input+.payment-label:before {
+.Membership-info .payment-item input+.payment-label:before {
     content: '';
     background: #f4f4f4;
     border-radius: 100%;
@@ -3247,19 +3247,19 @@ input:-webkit-autofill:active {
     transition: all 250ms ease;
 }
 
-.donation-info .payment-item input:checked+.payment-label:before {
+.Membership-info .payment-item input:checked+.payment-label:before {
     background-color: var(--secondary-color);
     -webkit-box-shadow: inset 0 0 0 4px #f4f4f4;
     box-shadow: inset 0 0 0 4px #f4f4f4;
 }
 
-.donation-info .payment-item input:focus+.payment-label:before {
+.Membership-info .payment-item input:focus+.payment-label:before {
     outline: none;
     border-color: var(--secondary-color);
 }
 
-/*-- Donation Amount --*/
-.donation-info .amount-input-box {
+/*-- Membership Amount --*/
+.Membership-info .amount-input-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3269,7 +3269,7 @@ input:-webkit-autofill:active {
     overflow: hidden;
 }
 
-.donation-info .amount-input-box input {
+.Membership-info .amount-input-box input {
     width: 100%;
     padding: 1.3rem;
     border: var(--border);
@@ -3278,11 +3278,11 @@ input:-webkit-autofill:active {
     border-bottom-right-radius: 0.5rem;
 }
 
-.donation-info .amount-input-box input:focus {
+.Membership-info .amount-input-box input:focus {
     border-color: var(--main-color);
 }
 
-.donation-info .amount-input-box label {
+.Membership-info .amount-input-box label {
     color: var(--white);
     background-image: -webkit-linear-gradient(306deg, var(--secondary-color), #065d34, var(--secondary-color));
     background-image: linear-gradient(144deg, var(--secondary-color), #065d34, var(--secondary-color));
@@ -3301,7 +3301,7 @@ input:-webkit-autofill:active {
     cursor: pointer;
 }
 
-.donation-info .amount-choices {
+.Membership-info .amount-choices {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3311,7 +3311,7 @@ input:-webkit-autofill:active {
     padding-top: 1rem;
 }
 
-.donation-info .amount-choices .amount-item {
+.Membership-info .amount-choices .amount-item {
     padding: 1.3rem 2rem;
     border-right: 0.1rem solid var(--white);
     background-image: -webkit-linear-gradient(306deg, var(--secondary-color), #065d34, var(--secondary-color));
@@ -3322,27 +3322,27 @@ input:-webkit-autofill:active {
     cursor: pointer;
 }
 
-.donation-info .amount-choices .amount-item:first-child {
+.Membership-info .amount-choices .amount-item:first-child {
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
 }
 
-.donation-info .amount-choices .amount-item:last-child {
+.Membership-info .amount-choices .amount-item:last-child {
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
 }
 
-.donation-info .amount-choices .amount-item:hover {
+.Membership-info .amount-choices .amount-item:hover {
     background-position: 100% 0px;
 }
 
 /*-- Personal Information --*/
-.donation-info .personal-info textarea {
+.Membership-info .personal-info textarea {
     resize: none;
     height: 22rem;
 }
 
-/*------------------------------ (04)-Donation (End) ------------------------------*/
+/*------------------------------ (04)-Membership (End) ------------------------------*/
 
 
 
@@ -7155,3 +7155,338 @@ input[type="range"]::-moz-range-thumb{
         flex: 1 1 100%; /* One item per row on small screens */
     }
 }
+
+
+
+/* ==================== Events Calendar Search (Start) ==================== */
+.events-calendar-search {
+    background-color: #f8f8f8;
+    padding: 2rem 0;
+}
+
+.events-calendar-search .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.events-calendar-search h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.events-calendar-search h3 {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.search-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.filter-group {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-group label {
+    font-size: 0.875rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.filter-group select,
+.filter-group input[type="date"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: white;
+}
+
+.search-btn {
+    background-color: #00853E;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #006830;
+}
+
+@media (max-width: 768px) {
+    .search-filters {
+        flex-direction: column;
+    }
+
+    .filter-group {
+        width: 100%;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+}
+/* ==================== Events Calendar Search (End) ==================== */
+
+
+/* ==================== General Styles (Start) ==================== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #00853E;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #006830;
+}
+/* ==================== General Styles (End) ==================== */
+
+/* ==================== Industry Section (Start) ==================== */
+.industry-section {
+    padding: 80px 0;
+    background-color: #f8f8f8;
+}
+
+.industry-section .section-header {
+    margin-bottom: 60px;
+}
+
+.industry-section .main-heading {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.industry-section p {
+    font-size: 18px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.industry-section .link {
+    color: #00853E;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.industry-section .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.industry-section .membership-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+
+.industry-section .membership-item:hover {
+    transform: translateY(-5px);
+}
+
+.industry-section .icon {
+    font-size: 48px;
+    color: #00853E;
+    margin-bottom: 20px;
+}
+
+.industry-section .category {
+    font-size: 14px;
+    color: #00853E;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.industry-section .content h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.industry-section .content p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ==================== Industry Section (End) ==================== */
+
+/* ==================== Pricing Section (Start) ==================== */
+.pricing-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.pricing-section .main-heading {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+
+.pricing-section .pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.pricing-section .pricing-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.pricing-section .pricing-card:hover {
+    transform: scale(1.05);
+}
+
+.pricing-section .pricing-card .main-heading {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.pricing-section .price {
+    font-size: 36px;
+    color: #00853E;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.pricing-section .pricing-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* ==================== Pricing Section (End) ==================== */
+
+/* ==================== FAQ Section (Start) ==================== */
+.faq-section {
+    padding: 80px 0;
+    background-color: #f8f8f8;
+}
+
+.faq-section .main-heading {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+
+.faq-section .box-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-section .faq-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.faq-section .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.faq-section .faq-question .main-heading {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.faq-section .faq-question i {
+    font-size: 20px;
+    color: #00853E;
+    transition: transform 0.3s ease;
+}
+
+.faq-section .faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+.faq-section .faq-answer {
+    padding: 0 20px 20px;
+    display: none;
+}
+
+.faq-section .faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-section .faq-answer p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ==================== FAQ Section (End) ==================== */
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .industry-section .main-heading,
+    .pricing-section .main-heading,
+    .faq-section .main-heading {
+        font-size: 28px;
+    }
+
+    .industry-section p,
+    .pricing-section .price {
+        font-size: 16px;
+    }
+
+    .industry-section .box-container,
+    .pricing-section .pricing-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .industry-section .membership-item,
+    .pricing-section .pricing-card {
+        padding: 20px;
+    }
+}
+
