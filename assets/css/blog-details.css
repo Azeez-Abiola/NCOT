@@ -1,0 +1,292 @@
+/* Blog Details Page Styling */
+.page-title {
+    background: linear-gradient(102.3deg, rgba(147,39,143,1) 5.9%, rgba(234,172,232,1) 64%, rgba(246,219,245,1) 89%);
+    padding: 4rem 2rem;
+    text-align: center;
+    color: white;
+  }
+  .page-title h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  }
+  .page-title .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+  }
+  .page-title .link a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .page-title .link a:hover {
+    color: #FEF7CD;
+  }
+  .blog-details {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .blog-info {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  .blog-info .image {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+  .blog-info .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  .blog-info .image img:hover {
+    transform: scale(1.05);
+  }
+  .blog-info .content {
+    padding: 2rem;
+  }
+  .main-heading {
+    font-size: 2.5rem;
+    color: #1A1F2C;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+  .details {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    color: #8E9196;
+  }
+  .details h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+  }
+  .important {
+    background: linear-gradient(to right, #fdfcfb 0%, #e2d1c3 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+    position: relative;
+  }
+  .important p {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #1A1F2C;
+    line-height: 1.6;
+    padding-left: 2rem;
+  }
+  .important h3 {
+    text-align: right;
+    color: #6E59A5;
+    margin-top: 1rem;
+  }
+  .page-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+  .page-gallery a {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  .page-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  .page-gallery img:hover {
+    transform: scale(1.1);
+  }
+  .sub-section {
+    background: linear-gradient(109.6deg, rgba(223,234,247,1) 11.2%, rgba(244,248,252,1) 91.1%);
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+  }
+  .sub-heading {
+    color: #1A1F2C;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+  .sub-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  .sub-section li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    color: #1A1F2C;
+    font-size: 1.1rem;
+  }
+  .end-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 0;
+    padding: 2rem 0;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  .share, .tags {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .share i {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F1F0FB;
+    border-radius: 50%;
+    color: #6E59A5;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .share i:hover {
+    background: #6E59A5;
+    color: white;
+    transform: translateY(-2px);
+  }
+  .tags span {
+    padding: 0.5rem 1rem;
+    background: #F1F0FB;
+    border-radius: 20px;
+    color: #6E59A5;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+  .tags span:hover {
+    background: #6E59A5;
+    color: white;
+  }
+  .author-intro {
+    background: linear-gradient(to right, #c1c161 0%, #c1c161 0%, #d4d4b1 100%);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 3rem 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .author-intro-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  .front-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid white;
+  }
+  .front-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .author-info {
+    flex: 1;
+  }
+  .author-info h3 {
+    font-size: 1.5rem;
+    color: #1A1F2C;
+    margin-bottom: 0.5rem;
+  }
+  .author-info p {
+    color: #4A5568;
+    margin-bottom: 1rem;
+  }
+  .leave-reply {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  .form h3 {
+    font-size: 1.75rem;
+    color: #1A1F2C;
+    margin-bottom: 2rem;
+  }
+  .input-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .box {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  .box:focus {
+    outline: none;
+    border-color: #6E59A5;
+  }
+  textarea.box {
+    resize: vertical;
+    min-height: 150px;
+  }
+  .btn {
+    background: linear-gradient(to right, #9b87f5, #7E69AB);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(126, 105, 171, 0.3);
+  }
+  @media (max-width: 768px) {
+    .page-title h2 {
+      font-size: 2rem;
+    }
+    
+    .main-heading {
+      font-size: 2rem;
+    }
+    
+    .details {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .author-intro-content {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .end-details {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
