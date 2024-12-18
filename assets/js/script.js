@@ -39,17 +39,14 @@ $(document).ready(function(){
   
   });
 
-  /*--------------- Loader ---------------*/
-  function loader(){
-    document.querySelector(".loader-container").classList.add('fade-out');
-  }
-
-  function fadeOut(){
-    setInterval(loader, 1000)
-  }
-
-  window.onload = fadeOut;
-
+document.addEventListener('DOMContentLoaded', function() {
+  const faqItems = document.querySelectorAll('.faq-item');
+  
+  faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+          item.classList.toggle('active');
+      });
+  });
 });
-
 
