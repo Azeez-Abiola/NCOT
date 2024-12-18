@@ -1,32 +1,31 @@
-$(document).ready(function(){
-
+$(document).ready(function() {
   $('.scroll-top').hide();
   
   /*---------- Mobile-Navbar Toggler ----------*/
   let sideBar = document.querySelector('.mobile-menu');
 
-  document.querySelector('.header #menu-btn').onclick = () =>{
-      sideBar.classList.add('active');
-  }
- 
-  document.querySelector('#close-side-bar').onclick = () =>{   
-      sideBar.classList.remove('active');
-      $(".nav-link .main-nav-link").removeClass("active");
-      $(".nav-link .sub-nav-link").removeClass("active").slideUp()
-      $(".nav-link .main-nav-link i").removeClass("fa-minus").addClass("fa-plus");
-  }
-  
-  // On Load/Scroll
-  $(window).on('load scroll',function(){
+  document.querySelector('.header #menu-btn').onclick = () => {
+    sideBar.classList.add('active');
+  };
+
+  document.querySelector('#close-side-bar').onclick = () => {   
     sideBar.classList.remove('active');
     $(".nav-link .main-nav-link").removeClass("active");
-    $(".nav-link .sub-nav-link").removeClass("active").slideUp()
+    $(".nav-link .sub-nav-link").removeClass("active").slideUp();
+    $(".nav-link .main-nav-link i").removeClass("fa-minus").addClass("fa-plus");
+  };
+  
+  // On Load/Scroll
+  $(window).on('load scroll', function() {
+    sideBar.classList.remove('active');
+    $(".nav-link .main-nav-link").removeClass("active");
+    $(".nav-link .sub-nav-link").removeClass("active").slideUp();
     $(".nav-link .main-nav-link i").removeClass("fa-minus").addClass("fa-plus");	
 
     /*--------------- Sticky Header ---------------*/
-    if($(window).scrollTop() > 68){
+    if ($(window).scrollTop() > 68) {
       $('header .header-2').addClass('active');
-    }else{
+    } else {
       $('header .header-2').removeClass('active');
     }
 
@@ -36,30 +35,26 @@ $(document).ready(function(){
     } else {
       $('.scroll-top').fadeOut();
     }
-  
   });
 
   /*--------------- Loader ---------------*/
-  function loader(){
+  function loader() {
     document.querySelector(".loader-container").classList.add('fade-out');
   }
 
-  function fadeOut(){
-    setInterval(loader, 1000)
+  function fadeOut() {
+    setInterval(loader, 1000);
   }
 
-  window.onload = fadeOut;
+  fadeOut(); // Call fadeOut explicitly
 
-});
-
-
-document.addEventListener('DOMContentLoaded', function() {
+  /*--------------- FAQ Toggle ---------------*/
   const faqItems = document.querySelectorAll('.faq-item');
   
   faqItems.forEach(item => {
-      const question = item.querySelector('.faq-question');
-      question.addEventListener('click', () => {
-          item.classList.toggle('active');
-      });
+    const question = item.querySelector('.faq-question');
+    question.addEventListener('click', () => {
+      item.classList.toggle('active');
+    });
   });
 });
