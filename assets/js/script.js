@@ -36,10 +36,8 @@ $(document).ready(function(){
     } else {
       $('.scroll-top').fadeOut();
     }
-  
-  });
 
-document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function() {
   const faqItems = document.querySelectorAll('.faq-item');
   
   faqItems.forEach(item => {
@@ -49,4 +47,8 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 });
+
+    
+  
+  });
 
