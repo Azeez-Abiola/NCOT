@@ -36,8 +36,24 @@ $(document).ready(function(){
     } else {
       $('.scroll-top').fadeOut();
     }
+  
+  });
 
-    document.addEventListener('DOMContentLoaded', function() {
+  /*--------------- Loader ---------------*/
+  function loader(){
+    document.querySelector(".loader-container").classList.add('fade-out');
+  }
+
+  function fadeOut(){
+    setInterval(loader, 1000)
+  }
+
+  window.onload = fadeOut;
+
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
   const faqItems = document.querySelectorAll('.faq-item');
   
   faqItems.forEach(item => {
@@ -47,8 +63,3 @@ $(document).ready(function(){
       });
   });
 });
-
-    
-  
-  });
-
